@@ -1,0 +1,169 @@
+main{
+    width:100%;
+    height:100%;
+    background-color:rgba(0, 0, 0, 0.721);
+    padding:1em;
+}
+/******Estilos de la presentación del sitio web******/
+.inicio{
+    width:100%;
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+}
+
+.inicio h1{
+    color:#F0E68C;
+    font-size:40px;
+    text-align: center;
+}
+
+.inicio .logo-shalom{
+    width:600px;
+}
+
+/*****Fin de Estilos de la presentación del sitio web*****/
+
+/***Inicio de estilos de las secciones*/
+
+/*Seccion-1 : Somos*/
+.somos{
+    min-height:90vh;
+}
+
+.somos .somos-title{
+    color:var(--special-color);
+    font-size:40px;
+    text-align:center;
+}
+
+.somos .somos-info{
+    color:var(--special-color);
+    font-size:22px;
+    text-align:justify;
+    line-height:130%;
+    margin-top:20px;
+}
+
+.somos .multimedia-continaer{
+    display:flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top:50px;
+}
+
+.somos .multimedia-continaer .iframe-1{
+    width:500px;
+    height:300px;
+    box-shadow:2px 2px 10px var(--special-color);
+    margin-bottom:40px;
+    transition:300ms;
+}
+
+.somos .multimedia-continaer .iframe-1:hover{
+    transform: scale(1.05);
+}
+
+.somos .multimedia-continaer .imagen-container{
+    width:500px;
+    height:300px;
+    box-shadow:2px 2px 10px var(--special-color);
+    margin-bottom:40px;
+    overflow: hidden;
+}
+
+.somos .multimedia-continaer .imagen{
+    width:100%;
+    height:100%;
+    transition:400ms;
+}
+
+.somos .multimedia-continaer .imagen:hover{
+    transform:scale(1.2);
+}
+
+@media (max-width:800px) {
+    .somos .multimedia-continaer .iframe-1{
+        width:300px;
+        height:300px;
+    }
+
+    .somos .multimedia-continaer .imagen-container{
+        width:300px;
+        height:300px;
+    }
+
+    .somos .multimedia-continaer .imagen{
+        width:100%;
+        height:100%;
+        transition:400ms;
+    }
+
+    .inicio .logo-shalom{
+        width:350px;
+    }
+
+    .inicio{
+        width:100%;
+        height:100vh;
+    }
+
+}
+
+/*Fin seccion-1: Somos*/
+
+/*Inicio seccion-2: Vision*/
+.vision{
+    margin-top:30px;
+}
+.vision .info-container{
+    display:flex;
+}
+.vision .vision-title{
+    color:var(--special-color);
+    font-size:40px;
+    text-align:center;
+}
+
+.vision .fachada-container{
+    width:500px;
+    overflow:hidden;
+    box-shadow:2px 2px 10px var(--special-color);
+}
+
+.vision .fachada{
+    width:100%;
+    height:100%;
+    transition:400ms;
+}
+
+.vision .fachada:hover{
+    transform:scale(1.1);
+}
+
+.vision .vision-info{
+    color:var(--special-color);
+    font-size:22px;
+    text-align:justify;
+    line-height:130%;
+    margin-top:20px;
+    padding:0em 1em;
+}
+
+@media (max-width:800px) {
+    .vision .info-container{
+        flex-direction:column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .vision .fachada-container{
+        width:300px;
+        overflow:hidden;
+        box-shadow:2px 2px 10px var(--special-color);
+    }
+}
+

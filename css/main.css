@@ -1,0 +1,40 @@
+*, *::before, *::after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration:none;
+}
+
+*::before, *::after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+:root{
+    --font-size-menu:21px;
+    --font-size-icon:30px;
+    --bg-color:rgb(239, 205, 173);
+    --text-color:rgb(27, 20, 15);
+    --weigth-text:500;
+    --special-color:#F0E68C;
+}
+
+body{
+    font-family: sans-serif;
+    background-image: url(fondo.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+section{
+    scroll-margin-top: 70px;
+}
+
